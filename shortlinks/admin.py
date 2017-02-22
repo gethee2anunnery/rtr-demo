@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from shortlinks.models import ShortLink
+from shortlinks.models import ShortLink, RequestData
 
 
 class ShortLinkAdmin(admin.ModelAdmin):
@@ -8,3 +8,4 @@ class ShortLinkAdmin(admin.ModelAdmin):
     search_fields = ('link_text', 'target')
 
 admin.site.register(ShortLink, ShortLinkAdmin)
+admin.site.register(RequestData)

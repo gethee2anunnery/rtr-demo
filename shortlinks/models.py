@@ -26,3 +26,10 @@ class ShortLink(models.Model):
         ordering = ('link_text',)
 
 
+class RequestData(models.Model):
+    shortlink = models.ForeignKey(ShortLink)
+    time = models.DateTimeField(auto_now_add=True)
+    path = models.CharField(max_length=1000)
+    uri = models.CharField(max_length=2000)
+    user_agent = models.CharField(max_length=1000,blank=True,null=True)
+    remote_addr = models.GenericIPAddressField()
