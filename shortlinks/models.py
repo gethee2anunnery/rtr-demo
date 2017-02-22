@@ -35,7 +35,7 @@ class RequestData(models.Model):
     remote_addr = models.GenericIPAddressField()
 
     def __unicode__(self):
-        return "%s ---> %s" % (self.remote_addr)
+        return "%s ---> %s" % (self.remote_addr, self.time)
 
     class Meta:
         verbose_name = 'Request'
