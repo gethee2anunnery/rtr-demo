@@ -24,5 +24,4 @@ def shortlink_redirect( request, link_text ):
     except Exception as e:
         print e
 
-
     return HttpResponseRedirect( url.target )

@@ -33,3 +33,10 @@ class RequestData(models.Model):
     uri = models.CharField(max_length=2000)
     user_agent = models.CharField(max_length=1000,blank=True,null=True)
     remote_addr = models.GenericIPAddressField()
+
+    def __unicode__(self):
+        return "%s ---> %s" % (self.remote_addr)
+
+    class Meta:
+        verbose_name = 'Request'
+        verbose_name_plural = 'Request Data'
