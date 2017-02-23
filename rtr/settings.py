@@ -25,7 +25,7 @@ SECRET_KEY = '3@h^(mmu$qat%%=m%8=7=!0ctmib=^zr_=v+u8w0i92gnvr)og'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rtr-demo.herokuapp.com',]
 
 
 # Application definition
