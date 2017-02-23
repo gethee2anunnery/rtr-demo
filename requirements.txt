@@ -2,4 +2,3 @@ Django==1.10.5
 gunicorn
 dj-database-url
 psycopg2
-setuptools
